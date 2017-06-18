@@ -1,0 +1,27 @@
+name = Open Signal PCM Studio Request Feature
+description = The feature to contain the studio request functionality
+core = 7.x
+package = Open Signal PCM Community Media Advanced
+version = 7.x-1.0
+project = "pcm_studio_request_feature"
+project_status_url = https://github.com/cm-advanced/pcm_studio_request_feature
+
+dependencies[] = conditional_fields
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = inline_entity_form
+dependencies[] = list
+dependencies[] = options
+dependencies[] = taxonomy
+features[conditional_fields][] = node:project_renewal_season_
+features[features_api][] = api:2
+features[field_base][] = field_studio_request_inline1
+features[field_base][] = field_studio_request_inline2
+features[field_instance][] = node-project_renewal_season_-field_studio_request_inline1
+features[field_instance][] = node-project_renewal_season_-field_studio_request_inline2
+features[field_instance][] = studiorequest-studiorequest-field_open_days
+features[field_instance][] = studiorequest-studiorequest-field_studio_req_duration
+features[field_instance][] = studiorequest-studiorequest-field_studio_timeslot
+features[field_instance][] = studiorequest-studiorequest-field_studio_type
+features_exclude[dependencies][pcm_season_renewal_features] = pcm_season_renewal_features
+features_exclude[dependencies][pcm_series_request] = pcm_series_request
